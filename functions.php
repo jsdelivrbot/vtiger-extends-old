@@ -1,19 +1,5 @@
 <?php
 
-// set the default timezone if not set at php.ini
-if (!@date_default_timezone_get('date.timezone')) {
-    // insert here the default timezone
-    date_default_timezone_set('America/New_York');
-}
-
-//
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-set_include_path(dirname(__DIR__));
-
-//
-require_once 'include/utils/utils.php';
-
 //
 function vtigerextends($name, $callable)
 {

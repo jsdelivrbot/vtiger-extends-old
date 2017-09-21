@@ -2,6 +2,8 @@
 
 cd `dirname $0`
 
+composer dump-autoload
+
 git pull
 git add .
 git add *
