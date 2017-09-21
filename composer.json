@@ -4,6 +4,6 @@
         "guzzlehttp/guzzle": "^6.3"
     },
     "autoload": {
-        "files": ["functions.php"]
+        "files": ["vtiger-extends.php"]
     }
 }
