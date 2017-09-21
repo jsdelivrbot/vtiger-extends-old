@@ -1,10 +1,10 @@
 <?php
 
-namespace VtigerExtends\Modules
+namespace Javanile\VtigerExtends\Modules;
 
 class Contacts
 {
-    function public function registerContactOnGoogle($contact)
+    public function registerContactOnGoogle($contact)
     {
 
 
