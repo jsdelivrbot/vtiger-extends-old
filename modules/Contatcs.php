@@ -1,6 +1,6 @@
 <?php
 
-namespace Javanile\VtigerExtends\Modules;
+namespace VtigerExtends\Modules;
 
 class Contacts
 {
