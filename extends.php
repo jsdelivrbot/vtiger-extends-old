@@ -3,20 +3,23 @@
  *
  */
 
+set_include_path(__DIR__.'/../');
 require_once __DIR__.'/vendor/autoload.php';
 
-use Javanile\VtigerExtends\VtigerContext;
+$extension = new Extension(__DIR__);
 
-$context = new VtigerContext(__DIR__);
+// load modules
+foreach (scandir(__DIR__.'/src/Modules') as $module) {
+    require_once __DIR__.'/src/Modules/'.$module.'.php';
 
-$context->injectGlobal();
+    $class = new ReflectionClass('\\Javanile\\VtigerExtends\\Modules\\'.$module);
+    $methods = $class->getMethods();
+    var_dump($methods);
+}
 
-/*
-$context->addPatch('patch name', function () {
+$extension->addPatch('patch name', function () {
 
 });
 
-$context->addPatch('patch name', function () use ($adb) {
 
-});
-*/
+

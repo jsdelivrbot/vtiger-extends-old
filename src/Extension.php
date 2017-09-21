@@ -2,10 +2,16 @@
 
 namespace Javanile\VtigerExtends;
 
-class VtigerContext
+class Extension
 {
     public function __construnct()
     {
+
+    }
+
+    public function injectGlobal()
+    {
+
 
     }
 
@@ -21,7 +27,7 @@ class VtigerContext
         );
     }
 
-    public function addPatch($name, )
+    public function addPatch($name)
     {
 
     }
