@@ -1,0 +1,6 @@
+{
+    "name":"javanile/vtiger-extends",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
