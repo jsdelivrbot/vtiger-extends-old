@@ -2,7 +2,10 @@
 
 ## Clone repository
 git clone https://github.com/javanile/vtiger-extends extends
-
-## Run docker environment
 cd extends
+
+## Run composer
 composer install
+
+## Run first time extends
+php extends.php
