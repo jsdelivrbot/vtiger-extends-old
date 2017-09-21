@@ -5,14 +5,18 @@
 
 require_once __DIR__.'/vendor/autoload.php';
 
-use Javanile\VtigerExtends\Extension;
+use Javanile\VtigerExtends\VtigerContext;
 
-$extension = new Extension(__DIR__);
+$context = new VtigerContext(__DIR__);
 
-$extension->addCommonPatch();
+$context->injectGlobal();
 
-$extension->addPatch('patch name', function () use ($adb) {
-
-
+/*
+$context->addPatch('patch name', function () {
 
 });
+
+$context->addPatch('patch name', function () use ($adb) {
+
+});
+*/
