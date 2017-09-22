@@ -5,10 +5,11 @@
 
 use Pimple\Container;
 
-$container = new Container();
+$c = new Container();
 
-$container['module Contacts'] = function ($c) {
+$c['module Contacts'] = function ($c) {
     require_once __DIR__.'/modules/Contacts.php';
     return new VtigerExtends\Modules\Contacts();
 };
+
 

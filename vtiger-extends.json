@@ -1,1 +1,5 @@
-{"Use action title as method name":1}
+{
+    "action": {
+        "Contacts::registerContactOnGoogle": 1506095336
+    }
+}
