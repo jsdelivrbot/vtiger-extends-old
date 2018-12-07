@@ -4,7 +4,7 @@
 
 ```bash
 cd vtigercrm
-curl -sL https://rawgit.com/javanile/vtiger-extends/master/setup.sh | bash -
+curl -sL https://cdn.jsdelivr.net/gh/javanile/vtiger-extends/setup.sh | bash -
 ```
 
 ## Install on Windows 
